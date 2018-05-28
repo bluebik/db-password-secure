@@ -1,0 +1,21 @@
+{
+    "name": "bluebik/db-password-secure",
+    "description": "Hash Database password",
+    "require": {
+        "bluebik/logger": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bluebik\\DbPasswordSecure\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bluebik\\DbPasswordSecure\\DbPasswordSecureServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT"
+}
